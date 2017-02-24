@@ -113,6 +113,10 @@ section .heading h2 {
   color: #fff;
 }
 
+#experience ul {
+margin-top: 45px;
+}
+
 .timeline {
   padding: 30px 10px;
   position: relative;
@@ -132,6 +136,7 @@ section .heading h2 {
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
+  list-style-type: none;
 }
 
 .timeline > li:after {
@@ -182,4 +187,81 @@ section .heading h2 {
 .timeline-panel-container-inverted .timeline-panel {
   float: left;
   margin-left: 40px;
+}
+
+.timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-heading h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.timeline-heading h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #d82c2e;
+}
+
+/* EDUCATION */
+
+#education {
+  background: #fff;
+}
+
+#education .heading h2 {
+  color: #d82c2e;
+}
+
+.education-block {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  background: #ddd;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.education-block h5 {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.education-block .glyphicon {
+  font-size: 40px;
+}
+
+.education-block h3 {
+  color: #d82c2e;
+}
+
+.education-block h4 {
+  margin-bottom: 20px;
+}
+
+.education-block p {
+  font-weight: bold
+}
+
+.education-block .red-divider {
+  margin-bottom: 20px;
 }
