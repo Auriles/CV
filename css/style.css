@@ -109,11 +109,26 @@ section .heading h2 {
   padding: 18px 50px;
   border-radius: 3px;
   transition: all 0.3s ease-in 0s;
+  text-decoration: none;
 }
 
 .button1:hover {
   background: white;
   color: #2B2E4A;
+  text-decoration: none;
+}
+
+.button1:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button1:visited:hover {
+  color: #2B2E4A;
+  text-decoration: none;
+}
+
+#about a:link {
   text-decoration: none;
 }
 
@@ -133,8 +148,24 @@ section .heading h2 {
   background: #ddd;
 }
 
-#skills .progress-bar {
-  background: #2B2E4A;
+.progress-bar-loulou {
+  background-color: #53354A;
+}
+
+.progress-bar-lucky {
+  background-color: #2B2E4A;
+}
+
+.progress-bar-pink {
+  background-color: #903749;
+}
+
+.progress-bar-carmine {
+  background-color: #E84545;
+}
+
+.progress-bar-prog {
+  background-color: #262626;
 }
 
 #skills .progress h5 {
@@ -385,4 +416,19 @@ footer .glyphicon:hover {
 footer h5 {
   color: #fff;
   font-weight: normal;
+}
+
+.pub {
+  color: #2B2E4A;
+  text-decoration: none;
+}
+
+.pub:visited, .pub:link {
+  color: #2B2E4A;
+  text-decoration: none;
+}
+
+.pub:hover {
+  color: #fff;
+  text-decoration: none;
 }
