@@ -12,7 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -28,12 +27,13 @@
         </div>
         <div id="myNavbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about">Moi</a></li>
+            <li><a href="#about">Mon Profil</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#experience">Expériences</a></li>
             <li><a href="#education">Formations</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#recommandations">Recommandations</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,7 @@
     <!-- ABOUT -->
     <section id="about" class="container-fluid">
       <div class="col-xs-8 col-md-4 profile-picture">
-        <img src="images/me.jpg" alt="Auriles" class="img-circle">
+        <img src="images/me.jpg" alt="Auriles" class="thumbnail profile-picture">
       </div>
       <div class="heading">
         <h1>Auriles EL Haddad</h1>
@@ -69,25 +69,25 @@
               </div>
             </div>
             <div class="progress">
-              <div class="progress-bar progress-bar-lucky progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              <div class="progress-bar progress-bar-lucky progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
                 <h5>JAVASCRIPT = 90%</h5>
               </div>
             </div>
             <div class="progress">
-              <div class="progress-bar progress-bar-lucky progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                <h5>ANGULAR JS = 70%</h5>
+              <div class="progress-bar progress-bar-lucky progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                <h5>ANGULAR JS = 60%</h5>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="progress">
-              <div class="progress-bar progress-bar-pink progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                <h5>NODE JS = 75%</h5>
+              <div class="progress-bar progress-bar-pink progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                <h5>NODE JS = 65%</h5>
               </div>
             </div>
             <div class="progress">
-              <div class="progress-bar progress-bar-pink progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                <h5>RAILS = 75%</h5>
+              <div class="progress-bar progress-bar-pink progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <h5>RAILS = 70%</h5>
               </div>
             </div>
             <div class="progress">
@@ -103,8 +103,8 @@
           </div>
           <div class="col-md-4">
             <div class="progress">
-              <div class="progress-bar progress-bar-carmine progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                <h5>MONGODB = 80%</h5>
+              <div class="progress-bar progress-bar-carmine progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                <h5>MONGODB = 65%</h5>
               </div>
             </div>
             <div class="progress">
@@ -113,13 +113,13 @@
               </div>
             </div>
             <div class="progress">
-              <div class="progress-bar progress-bar progress-bar-loulou progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                <h5>ANGULAR MATERIAL = 80%</h5>
+              <div class="progress-bar progress-bar progress-bar-loulou progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                <h5>ANGULAR MATERIAL = 60%</h5>
               </div>
             </div>
             <div class="progress">
-              <div class="progress-bar progress-bar progress-bar-prog progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                <h5>SWIFT = 85%</h5>
+              <div class="progress-bar progress-bar progress-bar-prog progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                <h5>SWIFT = 75%</h5>
               </div>
             </div>
           </div>
@@ -286,6 +286,61 @@
           <a href="#myCarousel" class="right carousel-control" data-slide="next" role="button">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="white-divider"></div>
+        <div class="heading">
+          <h2>Contact</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <form id="contact-form" action="" method="post" role="form">
+              <div class="row">
+                <!-- Prénom -->
+                <div class="col-md-6">
+                  <label for="firstname">Prénom *</label>
+                  <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom" value="">
+                  <p class="comments"></p>
+                </div>
+                <!-- Nom -->
+                <div class="col-md-6">
+                  <label for="name">Nom *</label>
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Votre nom" value="">
+                  <p class="comments"></p>
+                </div>
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="email">Email *</label>
+                  <input id="email" type="email" name="email" class="form-control" placeholder="Votre email" value="">
+                  <p class="comments"></p>
+                </div>
+                <!-- Téléphone -->
+                <div class="col-md-6">
+                  <label for="phone">Téléphone</label>
+                  <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre numéro de téléphone" value="">
+                  <p class="comments"></p>
+                </div>
+                <!-- Message -->
+                <div class="col-md-12">
+                  <label for="message">Message *</label>
+                  <textarea name="message" id="message" class="form-control" cols="4" rows="4" placeholder="Votre message..."></textarea>
+                  <p class="comments"></p>
+                </div>
+                <!-- Informations Requises -->
+                <div class="col-md-12">
+                  <p class="blue"><strong>* Ces informations sont requises !</strong></p>
+                </div>
+                <!-- Boutton d'envoi du formulaire -->
+                <div class="col-md-12">
+                  <input type="submit" class="button1" value="Envoyer">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

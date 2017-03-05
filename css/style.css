@@ -1,4 +1,7 @@
 /* GENERAL */
+* {
+  outline: none;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -38,6 +41,36 @@ section .heading h2 {
   height: 2px;
   background: #fff;
   margin: 0 auto;
+}
+
+.button1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid white;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 18px 50px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+  background: transparent;
+  text-decoration: none;
+}
+
+.button1:hover {
+  background: white;
+  color: #2B2E4A;
+  text-decoration: none;
+}
+
+.button1:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button1:visited:hover {
+  color: #2B2E4A;
+  text-decoration: none;
 }
 
 /* MENU */
@@ -99,35 +132,6 @@ section .heading h2 {
   color: #ddd;
 }
 
-.button1 {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid white;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 18px 50px;
-  border-radius: 3px;
-  transition: all 0.3s ease-in 0s;
-  text-decoration: none;
-}
-
-.button1:hover {
-  background: white;
-  color: #2B2E4A;
-  text-decoration: none;
-}
-
-.button1:visited {
-  color: #fff;
-  text-decoration: none;
-}
-
-.button1:visited:hover {
-  color: #2B2E4A;
-  text-decoration: none;
-}
-
 #about a:link {
   text-decoration: none;
 }
@@ -161,7 +165,7 @@ section .heading h2 {
 }
 
 .progress-bar-carmine {
-  background-color: #E84545;
+  background-color: #A15564;
 }
 
 .progress-bar-prog {
@@ -414,10 +418,49 @@ margin-top: 45px;
   color: #903749;
 }
 
+ /* CONTACT */
+
+ #contact {
+  background: #53354A;
+ }
+
+#contact .heading h2 {
+  color: #fff;
+}
+
+ #contact-form {
+   font-size: 20px;
+   color: #fff;
+ }
+
+ .form-control {
+   height: 50px;
+   font-size: 18px;
+ }
+
+ .comments {
+   font-style: italic;
+   font-size: 18px;
+   color: #DDDDDD;
+   height: 25px;
+ }
+
+ #contact-form input[type=submit] {
+   margin: 40px auto 0px;
+   display: block;
+ }
+
+ .thank-you {
+   text-align: center;
+   margin-top: 15px;
+   font-weight: bold;
+   font-size: 22px;
+ }
+
 /* FOOTER */
 
 footer {
-  background: #53354A;
+  background: #2B2E4A;
   padding: 20px 0 40px;
 }
 
@@ -436,4 +479,5 @@ footer h5 {
   color: #fff;
   font-weight: normal;
 }
+
 
