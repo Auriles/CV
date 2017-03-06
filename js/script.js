@@ -21,7 +21,7 @@ $(function(){
             success: function(json) {
 
                 if(json.isSuccess) {
-                    $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté :)</p>");
+                    $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté !</p>");
                     $('#contact-form')[0].reset();
                 } else {
                     $('#firstname + .comments').html(json.firstnameError);
