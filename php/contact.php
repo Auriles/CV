@@ -13,35 +13,35 @@
         $emailText = "";
 
         if (empty($array["firstname"])) {
-            $array["firstnameError"] = "Je veux connaitre ton prénom !";
+            $array["firstnameError"] = "Je veux connaitre votre prénom !";
             $array["isSuccess"] = false;
         } else {
             $emailText .= "Firstname: {$array['firstname']}\n";
         }
 
         if (empty($array["name"])) {
-            $array["nameError"] = "Et oui je veux tout savoir. Même ton nom !";
+            $array["nameError"] = "Et oui je veux tout savoir, même votre nom !";
             $array["isSuccess"] = false;
         } else {
             $emailText .= "Name: {$array['name']}\n";
         }
 
         if(!isEmail($array["email"])) {
-            $array["emailError"] = "T'essaies de me rouler ? C'est pas un email ça  !";
+            $array["emailError"] = "Vous essayez de me rouler ? C'est pas un email ça  !";
             $array["isSuccess"] = false;
         } else {
             $emailText .= "Email: {$array['email']}\n";
         }
 
         if (!isPhone($array["phone"])) {
-            $array["phoneError"] = "Que des chiffres et des espaces, stp...";
+            $array["phoneError"] = "Que des chiffres et des espaces, svp...";
             $array["isSuccess"] = false;
         } else {
             $emailText .= "Phone: {$array['phone']}\n";
         }
 
         if (empty($array["message"])) {
-            $array["messageError"] = "Qu'est-ce que tu veux me dire ?";
+            $array["messageError"] = "Qu'est-ce que vous voulez me dire ?";
             $array["isSuccess"] = false;
         } else {
             $emailText .= "Message: {$array['message']}\n";

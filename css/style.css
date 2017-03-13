@@ -522,17 +522,35 @@ footer h5 {
 
 .footer-left {
   color: #fff;
-  float: left;
   vertical-align: top;
-  text-align: center;
+  margin: auto;
+  order: 1;
+  position: relative;
+  width: 200px;
+  float: left;
+}
+
+.footer-center {
+  margin: auto;
+  order: 2;
+  position: relative;
 }
 
 .footer-right {
   color: #fff;
-  float: right;
   vertical-align: top;
+  margin: auto;
+  order: 3;
+  position: relative;
+  width: 200px;
+  float: right;
+}
+
+.ntm {
   text-align: center;
 }
+
+
 
 
 
