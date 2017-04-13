@@ -172,6 +172,10 @@ section .heading h2 {
   background-color: #4B4D65;
 }
 
+.progress-bar-projet {
+  background-color: #66687C;
+}
+
 #skills .progress h5 {
   text-shadow: 1px 1px 1px #000;
 }
@@ -307,9 +311,8 @@ margin-top: 45px;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
-  background: #ddd;
+  background: #fff;
   border-radius: 10px;
-  border: 2px solid #ccc;
   margin-bottom: 20px;
 }
 
@@ -475,7 +478,7 @@ footer .glyphicon:hover {
   font-size: 27px;
 }
 
-footer h5 {
+footer h5, footer h3, footer p {
   color: #fff;
   font-weight: normal;
 }
@@ -493,11 +496,6 @@ footer h5 {
   font-size: 35px;
   margin-top: 10px;
   margin-right: 10px;
-}
-
-.icon-facebook:hover {
-  color: #3B5998;
-  text-decoration: none;
 }
 
 .icon-linkedin:hover {
@@ -520,35 +518,42 @@ footer h5 {
   text-decoration: none;
 }
 
-.footer-left {
-  color: #fff;
-  vertical-align: top;
-  margin: auto;
-  order: 1;
-  position: relative;
-  width: 200px;
-  float: left;
-}
-
-.footer-center {
-  margin: auto;
-  order: 2;
-  position: relative;
-}
-
-.footer-right {
-  color: #fff;
-  vertical-align: top;
-  margin: auto;
-  order: 3;
-  position: relative;
-  width: 200px;
-  float: right;
-}
-
-.ntm {
+.text-center {
   text-align: center;
 }
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Mediaqueries */
+
+@media screen and (max-width: 425px) {
+
+  #experience ul.timeline:before {
+    display: none;
+  }
+
+  #experience .timeline-badge {
+    display: none;
+  }
+
+  #experience .timeline-panel:after {
+    display: none;
+  }
+
+  #experience .timeline-panel-container {
+    width: 100%;
+  }
+
+  #experience .timeline-panel-container-inverted {
+    width: 100%;
+  }
+
+  #experience .timeline-panel-container-inverted > .timeline-panel {
+    float: right;
+  }
+
+}
+
 
 
 
