@@ -483,6 +483,21 @@ footer h5, footer h3, footer p {
   font-weight: normal;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
 .icons {
   color: #fff;
   font-size: 30px;
@@ -515,6 +530,11 @@ footer h5, footer h3, footer p {
 
 .icon-phone:hover {
   color: #41EC7A;
+  text-decoration: none;
+}
+
+.icon-laptop:hover {
+  color: #903749;
   text-decoration: none;
 }
 
